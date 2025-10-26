@@ -7,7 +7,7 @@ import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
   return (
-    <section id="projects" className="scroll-mt-100">
+    <section id="proyectos" className="scroll-mt-100">
     <div className="py-20">
       <h1 className="heading">
         A small selection of{" "}

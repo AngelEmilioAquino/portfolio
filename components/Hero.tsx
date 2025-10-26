@@ -44,8 +44,9 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hola! Soy Angel Aquino, Full Stack Developer especializado en UX/UI y experiencias Web 3D desde República Dominicana.
+            Hola! Soy Angel Aquino, Full Stack & DevOps Developer especializado en UX/UI y experiencias Web 3D desde República Dominicana.
           </p>
+
 
           <a href="#projects">
             <MagicButton

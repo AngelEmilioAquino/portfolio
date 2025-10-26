@@ -17,9 +17,9 @@ const Home = () => {
 
       <div className="flex-1 w-full max-w-7xl mx-auto">
         <Hero />
-        <Grid />
-        <RecentProjects />
         <Experience />
+        <RecentProjects />
+        <Grid />
         <Approach />
       </div>
 

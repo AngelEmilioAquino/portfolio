@@ -44,8 +44,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["ReactJS", "Next.js", "TypeScript", "TailwindCSS", "Figma"];
+const rightLists = ["Node.js", "AWS", "SQL", "Python", "DevOps"];
 
   const [copied, setCopied] = useState(false);
 
@@ -58,7 +58,7 @@ export const BentoGridItem = ({
     setCopied(false);
   }, 5000);
 
-  // confetti chill
+  // confetti chill design
   confetti({
     particleCount: 100,
     spread: 60,
@@ -89,7 +89,7 @@ export const BentoGridItem = ({
             <img
               src={img}
               alt={img}
-              className={cn(imgClassName, "object-cover object-center ")}
+              className={cn(imgClassName, "object-cover object-center")}
             />
           )}
         </div>
@@ -107,7 +107,6 @@ export const BentoGridItem = ({
           )}
         </div>
         {id === 6 && (
-          // add background animation , remove the p tag
           <BackgroundGradientAnimation>
             <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
           </BackgroundGradientAnimation>
@@ -164,7 +163,7 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="mt-5 relative">
               <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
+                title={copied ? "¡Correo copiado!" : "Copiar correo"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}

@@ -7,8 +7,33 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Angel E. Aquino Portfolio",
-  description: "Portfolio de Angel E. Aquino – UX/UI Designer, Frontend & 3D Web Developer",
+  title: "Angel Aquino Portfolio",
+  description: "Portfolio de Angel E. Aquino – Full Stack, DevOps Developer, UX/UI & Web 3D Specialist",
+  icons: {
+    icon: "/logoNew.png",
+  },
+  metadataBase: new URL("https://angelaquino.vercel.app"),
+  openGraph: {
+    title: "Angel Aquino Portfolio",
+    description: "Portfolio de Angel E. Aquino – Full Stack, DevOps Developer, UX/UI & Web 3D Specialist",
+    url: "https://angelaquino.vercel.app",
+    siteName: "Angel Aquino Portfolio",
+    images: [
+      {
+        url: "/logoNew.png",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Angel Aquino Portfolio",
+    description: "Portfolio de Angel E. Aquino – Full Stack, DevOps Developer, UX/UI & Web 3D Specialist",
+    images: ["/logoNew.png"],
+  },
 };
 
 export default function RootLayout({
