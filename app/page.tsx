@@ -23,7 +23,6 @@ const Home = () => {
         <Approach />
       </div>
 
-      {/* Footer al final */}
       <Footer />
     </main>
   );

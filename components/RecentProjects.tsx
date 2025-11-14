@@ -1,85 +1,110 @@
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
-
+import { FaGithub } from "react-icons/fa";
+import { FaLink } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
   return (
     <section id="proyectos" className="scroll-mt-100">
-    <div className="py-20">
-      <h1 className="heading">
-        Mis Proyectos{" "}
-        <span className="text-purple">y Colaboraciones</span>
-      </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map((item) => (
-          <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            key={item.id}
-          >
-            <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
+      <div className="py-20">
+        <h1 className="heading text-center">
+          Mis Proyectos <span className="text-purple">y Colaboraciones</span>
+        </h1>
+
+        <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+          {projects.map((item) => (
+            <div
+              key={item.id}
+              className="lg:min-h-[32.5rem] h-[25rem] flex flex-col items-center justify-center sm:w-96 w-[80vw]"
             >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
-                >
-                  <img src="/bg.png" alt="bgimg" />
-                </div>
-                <img
-                  src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
-                />
-              </div>
-
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-                {item.title}
-              </h1>
-
-              <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
-                }}
+              <PinContainer
+                title={item.title}
+                href={item.link || "#"}
+                className="text-center items-center"
               >
-                {item.des}
-              </p>
+                <a
+                  href={item.link || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[25vh] lg:h-[35vh] mb-4 group rounded-3xl"
+                >
+                  <div className="absolute inset-0 bg-[#13162D]" />
 
-              <div className="flex items-center justify-between mt-7 mb-3">
-                <div className="flex items-center">
-                  {item.iconLists.map((icon, index) => (
-                    <div
-                      key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
-                    >
-                      <img src={icon} alt="icon5" className="p-2" />
-                    </div>
-                  ))}
-                </div>
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="absolute inset-0 w-full h-full object-cover z-10 scale-100 transition-transform duration-500 ease-out group-hover:brightness-105"
+                  />
 
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-30 transition-opacity duration-500 z-20" />
+                </a>
+
+                <a
+                  href={item.link || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 hover:text-purple transition-colors"
+                >
+                  {item.title}
+                </a>
+
+                <p
+                  className="lg:text-lg font-light text-sm text-[#BEC1DD] line-clamp-2 mt-2"
+                >
+                  {item.des}
+                </p>
+
+                <div className="flex items-center justify-between mt-7 mb-3 w-full">
+                  <div className="flex items-center">
+                    {item.iconLists.map((icon, index) => (
+                      <div
+                        key={index}
+                        className="border border-white/20 rounded-full bg-black/90 lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                        style={{
+                          transform: `translateX(-${5 * index + 2}px)`,
+                        }}
+                      >
+                        <img
+                          src={icon}
+                          alt={`icon-${index}`}
+                          className="p-2"
+                        />
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="flex gap-3">
+                    {item.link && (
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        className="border border-white/20 rounded-full bg-black/90 lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center hover:scale-125 transition-transform duration-300"
+                      >
+                        <FaLink size={20} />
+                      </a>
+                    )}
+                    {item.githubLink && (
+                      <a
+                        href={item.githubLink}
+                        target="_blank"
+                        className="border border-white/20 rounded-full bg-black/90 lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center hover:scale-125 transition-transform duration-300"
+                      >
+                        <FaGithub size={20} />
+                      </a>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </PinContainer>
-          </div>
-        ))}
+              </PinContainer>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
     </section>
   );
 };
 
 export default RecentProjects;
+
+
