@@ -4,10 +4,10 @@ import { Button } from "./ui/MovingBorders";
 
 const Experience = () => {
   return (
-    <section id="experiencia">
+    <section id="experience">
     <div className="py-20 w-full">
       <h1 className="heading">
-        Mi <span className="text-purple">experiencia laboral</span>
+        My <span className="text-purple">work experience</span>
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">

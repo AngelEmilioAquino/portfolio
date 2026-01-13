@@ -4,7 +4,7 @@ import MagicButton from "./MagicButton";
 
 const Footer = () => {
   return (
-    <footer id="contacto" className="w-full pt-20 pb-10 relative">
+    <footer id="contact" className="w-full pt-20 pb-10 relative">
       <div className="absolute inset-0 -z-10">
         <img
           src="/footer-grid.svg"
@@ -15,17 +15,16 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw] text-center">
-          ¿Listo para llevar <span className="text-purple">tu </span> 
-          presencia digital al siguiente nivel?
+        Ready to take your digital presence to the next level?
         </h1>
-         
+
         <p className="text-white-200 md:mt-10 my-5 text-center max-w-2xl">
-          Contáctame hoy mismo y hablemos sobre cómo puedo ayudarte a alcanzar tus objetivos.
+        Contact me today and let&apos;s talk about how I can help you achieve your goals.
         </p>
 
         <a href="mailto:angelemilioaquino6@gmail.com">
           <MagicButton
-            title="Contáctame"
+            title="Get in touch"
             icon={<FaLocationArrow />}
             position="right"
           />

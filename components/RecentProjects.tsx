@@ -7,10 +7,10 @@ import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
   return (
-    <section id="proyectos" className="scroll-mt-100">
+    <section id="projects" className="scroll-mt-100">
       <div className="py-20">
         <h1 className="heading text-center">
-          Mis Proyectos <span className="text-purple">y Colaboraciones</span>
+          My Projects <span className="text-purple">and Collaborations</span>
         </h1>
 
         <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">

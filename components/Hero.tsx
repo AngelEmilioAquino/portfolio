@@ -35,22 +35,22 @@ const Hero = () => {
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
-            Creando experiencias digitales únicas
+            Creating unique digital experiences
           </p>
           {/*Link: https://ui.aceternity.com/components/text-generate-effect*/}
           <TextGenerateEffect
-            words="Transformando ideas en experiencias UX/UI & Web 3D impecables"
+            words="Transforming ideas into flawless UX/UI & Web 3D experiences"
             className="text-center text-[40px] md:text-5xl lg:text-6xl" 
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hola! Soy Angel E. Aquino, Full Stack & DevOps Developer especializado en UX/UI y experiencias Web 3D desde República Dominicana.
+            Hello! I&apos;m Angel E. Aquino, a Full Stack and DevOps Developer specializing in UX/UI and 3D Web experiences from the Dominican Republic.
           </p>
 
 
           <a href="#projects">
             <MagicButton
-              title="Mira mi trabajo"
+              title="Check out my work"
               icon={<FaLocationArrow />}
               position="right"
             />

@@ -163,7 +163,7 @@ const rightLists = ["Node.js", "AWS", "SQL", "Python", "DevOps"];
           {id === 6 && (
             <div className="mt-5 relative">
               <MagicButton
-                title={copied ? "¡Correo copiado!" : "Copiar correo"}
+                title={copied ? "Email copied!" : "Copy email"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}

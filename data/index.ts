@@ -1,16 +1,16 @@
 import { url } from "inspector";
 
 export const navItems = [
-  { name: "Experiencia", link: "#experiencia" },
-  { name: "Proyectos", link: "#proyectos" },
-  { name: "Sobre Mí", link: "#sobre-mi" },
-  { name: "Contacto", link: "#contacto" },
+{ name: "Experience", link: "#experience" },
+{ name: "Projects", link: "#projects" },
+{ name: "About Me", link: "#about-me" },
+{ name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "Priorizo ​​la colaboración con el cliente, fomentando la comunicación abierta.",
+    title: "I prioritize collaboration with the client, fostering open communication.",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -75,7 +75,7 @@ export const projects = [
   {
     id: 1,
     title: "Aprobado RD",
-    des: "Es una plataforma inmobiliaria diseñada para facilitar ventas de casas en RD.",
+    des: "Real estate platform designed to facilitate house sales in the Dominican Republic.",
     img: "/AprobadoRD.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/prisma.svg", "/supabase.svg"],
     link: "https://aprobadord.com/",
@@ -83,7 +83,7 @@ export const projects = [
   {
     id: 2,
     title: "Fintech",
-    des: "Es una plataforma que ofrece servicios financieros apoyándose de la tecnología.",
+    des: "A fintech platform that offers financial services and solutions to users.",
     img: "/Fintech.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/reactrouter.svg", "/reactquery.svg"],
     link: "",
@@ -92,7 +92,7 @@ export const projects = [
   {
     id: 3,
     title: "KYC",
-    des: "Es una plataforma para verificar la identidad de sus clientes y evaluar riesgos potenciales.",
+    des: "A platform for verifying customer identity and assessing potential risks.",
     img: "/KYC3.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/supabase.svg", "/next.svg"],
     link: "",
@@ -101,7 +101,7 @@ export const projects = [
   {
     id: 4,
     title: "El Pensum",
-    des: "Es una plataforma educativa que ayuda a los estudiantes a encontrar recursos académicos.",
+    des: "A platform that helps students find academic resources.",
     img: "/A&N.png",
     iconLists: ["/Angular.png", "/tail.svg", "/ts.svg", "/aspnet.webp", "/fm.svg"],
     link: "https://elpensum.com/inicio",
@@ -109,7 +109,7 @@ export const projects = [
   {
     id: 5,
     title: "A&N Ecommerce",
-    des: "A&N E-commerce es una tienda online moderna, creada por Angel Aquino y Nicole Tineo, que ofrece productos esenciales de moda y estilo de vida. El sitio web está diseñado para brindar una experiencia de usuario rápida, segura y visualmente atractiva.",
+    des: "A&N E-commerce is a modern online store, created by Angel Aquino and Nicole Tineo.",
     img: "/A&N.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/supabase.svg", "/fm.svg"],
     link: "https://aynecommerce.netlify.app/",
@@ -154,32 +154,32 @@ export const workExperience = [
   {
     id: 1,
     title: "Desarrollador Frontend – UNPHU | CIBSE-2026",
-    desc: "Lidero la experiencia UX/UI del sitio web de CIBSE, personalizando una plantilla base mediante Markdown, CSS y JavaScript. He mejorado la coherencia visual y accesibilidad general en un 35%, aplicando principios de diseño moderno y buenas prácticas.",
-    date: "Julio 2025 - Presente",
+    desc: "I lead the UX/UI design of the CIBSE website, customizing a base template using Markdown, CSS, and JavaScript. I have improved visual consistency and overall accessibility by 35%, applying modern design principles and best practices.",
+    date: "July 2025 - Present",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Desarrollador Full Stack – Precisa Group SRL",
-    desc: "Lidero la parte UX/UI de los proyectos en los que participo, implementando diseños más intuitivos y accesibles con React, Supabase, NextJS y NodeJS. He optimizado la consistencia visual de los componentes y la lógica del frontend mediante buenas prácticas, logrando mejorar la experiencia de usuario en un 30%.",
-    date: "Julio 2025 - Presente",
+    title: "Full Stack Developer – Precisa Group SRL",
+    desc: "I lead the UX/UI design of projects I participate in, implementing more intuitive and accessible designs with React, Supabase, NextJS and NodeJS. I have optimized the visual consistency of components and frontend logic through best practices, achieving a 30% improvement in user experience.",
+    date: "July 2025 - Present",
     className: "md:col-span-2",
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Desarrollador Full Stack – Construcciones y Soluciones Emilio SRL",
-    desc: "Diseñé y mantengo un sistema integral de gestión de inventario con PHP, JavaScript, MySQL y CSS. Lidero el diseño UX/UI y manejo todo el ciclo del producto, desde el backend hasta el despliegue. Logré aumentar la eficiencia operativa en un 40% y simplificar el flujo de uso para empleados mediante una interfaz más limpia y adaptable.",
-    date: "Febrero 2023 – Actualidad (mantenimiento)",
+    title: "Full Stack Developer – Emilio SRL Construction and Solutions",
+    desc: "I designed and maintain a comprehensive inventory management system using PHP, JavaScript, MySQL, and CSS. I lead the UX/UI design and manage the entire product lifecycle, from backend development to deployment. I achieved a 40% increase in operational efficiency and simplified the user experience for employees through a cleaner and more responsive interface.",
+    date: "February 2023 – Present (maintenance)",
     className: "md:col-span-2",
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Freelance – Aplicaciones Web y Móviles",
-    desc: "Desarrollo soluciones personalizadas para clientes, abarcando desde el diseño UX/UI hasta la implementación completa en frontend, backend y despliegue. Aplico principios de DevOps avanzados para optimizar los flujos de publicación y mantenimiento, asegurando un diseño consistente y una experiencia visual profesional.",
-    date: "2023 - Presente",
+    title: "Freelance – Web and Mobile Applications",
+    desc: "I develop custom solutions for clients, encompassing everything from UX/UI design to full implementation across frontend, backend, and deployment. I apply advanced DevOps principles to optimize publishing and maintenance workflows, ensuring consistent design and a professional visual experience.",
+    date: "2023 - Present",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
