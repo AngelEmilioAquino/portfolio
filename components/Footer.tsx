@@ -34,7 +34,7 @@ const Footer = () => {
       {/* Copyright + redes */}
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center w-full max-w-7xl mx-auto px-5">
         <p className="md:text-base text-sm md:font-normal font-light text-center md:text-left">
-          © {new Date().getFullYear()} Angel E. Aquino. Todos los derechos reservados.
+          © {new Date().getFullYear()} Angel E. Aquino. All rights reserved.
         </p>
 
         <div className="flex items-center md:gap-3 gap-6 mt-5 md:mt-0">

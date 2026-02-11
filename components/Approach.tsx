@@ -7,15 +7,15 @@ const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        Mi <span className="text-purple">enfoque</span>
+        My <span className="text-purple">approach</span>
       </h1>
       {/* remove bg-white dark:bg-black */}
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         {/* add des prop */}
         <Card
-          title="Planificación y Estrategia"
-          icon={<AceternityIcon order="Fase 1" />}
-          des="Colaboraremos para definir los objetivos de su sitio web, su público objetivo y sus funcionalidades clave. Hablaremos sobre aspectos como la estructura del sitio, la navegación y los requisitos de contenido."
+          title="Planning and Strategy"
+          icon={<AceternityIcon order="Phase 1" />}
+          des="We will collaborate to define the objectives of your website, your target audience, and key functionalities. We will discuss aspects such as site structure, navigation, and content requirements."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -24,9 +24,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Progreso y actualizaciones"
-          icon={<AceternityIcon order="Fase 2"/>}
-          des="Una vez que acordamos el plan, pongo mi lista de reproducción de música y me sumerjo en la programación. Desde los bocetos iniciales hasta el código pulido, te mantengo al tanto de cada paso."
+          title="Progress and Updates"
+          icon={<AceternityIcon order="Phase 2"/>}
+          des="Once we agree on the plan, I put on my music playlist and dive into development. From initial sketches to polished code, I keep you updated on every step."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -39,9 +39,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Desarrollo y lanzamiento"
-          icon={<AceternityIcon order="Fase 3" />}
-          des="¡Aquí es donde surge la magia! Con base en el diseño aprobado, traduciré todo a código funcional, construyendo tu sitio web desde cero."
+          title="Development and Launch"
+          icon={<AceternityIcon order="Phase 3" />}
+          des="Here is where the magic happens! Based on the approved design, I'll translate everything into functional code, building your website from scratch."
         >
           <CanvasRevealEffect
             animationSpeed={3}

@@ -4,8 +4,21 @@ import { FaGithub } from "react-icons/fa";
 import { FaLink } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import { useState } from "react";
 
 const RecentProjects = () => {
+
+const ITEMS_PER_PAGE = 4;
+const [currentPage, setCurrentPage] = useState(1);
+
+const totalPages = Math.ceil(projects.length / ITEMS_PER_PAGE);
+
+const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+const currentProjects = projects.slice(
+  startIndex,
+  startIndex + ITEMS_PER_PAGE
+);
+
   return (
     <section id="projects" className="scroll-mt-100">
       <div className="py-20">
@@ -14,7 +27,7 @@ const RecentProjects = () => {
         </h1>
 
         <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-          {projects.map((item) => (
+          {currentProjects.map((item) => (
             <div
               key={item.id}
               className="lg:min-h-[32.5rem] h-[25rem] flex flex-col items-center justify-center sm:w-96 w-[80vw]"
@@ -99,6 +112,32 @@ const RecentProjects = () => {
               </PinContainer>
             </div>
           ))}
+        </div>
+
+        <div className="flex justify-center items-center gap-3 mt-16 flex-wrap">
+          {Array.from({ length: totalPages }).map((_, index) => {
+            const page = index + 1;
+            const isActive = page === currentPage;
+
+            return (
+              <button
+                key={page}
+                onClick={() => setCurrentPage(page)}
+                className={`
+                  w-10 h-10 rounded-full flex items-center justify-center
+                  text-sm font-medium transition-all duration-300
+                  border border-white/20
+                  ${
+                    isActive
+                      ? "bg-transparent text-white scale-125 shadow-lg shadow-white/10"
+                      : "text-white/70 hover:bg-white/10 hover:scale-105"
+                  }
+                `}
+              >
+                {page}
+              </button>
+            );
+          })}
         </div>
       </div>
     </section>

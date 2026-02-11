@@ -20,7 +20,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "Soy muy flexible con las comunicaciones por zona horaria.",
+    title: "I'm flexible across time zones.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -30,8 +30,8 @@ export const gridItems = [
   },
   {
     id: 5,
-    title: "Desarrollando habilidades en diseño de software.",
-    description: "Enfocado en SOLID, DevOps y patrones de diseño",
+    title: "Developing skills in software design.",
+    description: "Focused on SOLID, DevOps, and design patterns.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2", 
     imgClassName: "absolute right-0 bottom-0 md:w-200 w-200",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -40,7 +40,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Apasionado por la tecnología, el desarrollo y DevOps.",
+    title: "Passionate about technology, development, and DevOps.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -50,8 +50,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "Mi stack tecnológico",
-    description: "Intento mejorar constantemente",
+    title: "My Technology Stack",
+    description: "I try to improve constantly",
     className: "md:col-span-3 md:row-span-2", 
     imgClassName: "",
     titleClassName: "justify-center",
@@ -60,7 +60,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "¿Quieres empezar un proyecto juntos o discutir oportunidades laborales?",
+    title: "Do you want to start a project together or discuss job opportunities?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -102,19 +102,37 @@ export const projects = [
     id: 4,
     title: "El Pensum",
     des: "A platform that helps students find academic resources.",
-    img: "/A&N.png",
+    img: "/pensum22.png",
     iconLists: ["/Angular.png", "/tail.svg", "/ts.svg", "/aspnet.webp", "/fm.svg"],
     link: "https://elpensum.com/inicio",
   },
   {
     id: 5,
+    title: "RoboTap",
+    des: "RoboTap is a UNPHU initiative using technology for social impact.",
+    img: "/banner.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/supabase.svg", "/fm.svg"],
+    link: "https://robo-tap.vercel.app/",
+    githubLink: "https://github.com/AngelEmilioAquino/RoboTap",
+  },
+  {
+    id: 6,
     title: "A&N Ecommerce",
     des: "A&N E-commerce is a modern online store, created by Angel Aquino and Nicole Tineo.",
     img: "/A&N.png",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/supabase.svg", "/fm.svg"],
     link: "https://aynecommerce.netlify.app/",
     githubLink: "https://github.com/AngelEmilioAquino/Ecommerce",
-  }
+  },
+  {
+    id: 7,
+    title: "A&N Ecommerce",
+    des: "A&N E-commerce is a modern online store, created by Angel Aquino and Nicole Tineo.",
+    img: "/A&N.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/supabase.svg", "/fm.svg"],
+    link: "https://aynecommerce.netlify.app/",
+    githubLink: "https://github.com/AngelEmilioAquino/Ecommerce",
+  },
 ];
 
 export const testimonials = [
