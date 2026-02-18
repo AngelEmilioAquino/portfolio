@@ -1,7 +1,7 @@
 "use client";
 
 import { FaGithub } from "react-icons/fa";
-import { FaLink } from "react-icons/fa6";
+import { FaLink, FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import { useState } from "react";
@@ -114,7 +114,24 @@ const currentProjects = projects.slice(
           ))}
         </div>
 
-        <div className="flex justify-center items-center gap-3 mt-16 flex-wrap">
+        <div className="flex justify-center items-center gap-4 mt-16 flex-wrap">
+
+          <button
+            onClick={() => setCurrentPage((p) => Math.max(p - 1, 1))}
+            disabled={currentPage === 1}
+            className={`
+              w-10 h-10 rounded-full flex items-center justify-center
+              border border-white/20 transition-all duration-300
+              ${
+                currentPage === 1
+                  ? "opacity-40 cursor-not-allowed"
+                  : "hover:scale-110 hover:bg-white/10"
+              }
+            `}
+          >
+            <FaChevronLeft />
+          </button>
+
           {Array.from({ length: totalPages }).map((_, index) => {
             const page = index + 1;
             const isActive = page === currentPage;
@@ -129,7 +146,7 @@ const currentProjects = projects.slice(
                   border border-white/20
                   ${
                     isActive
-                      ? "bg-transparent text-white scale-125 shadow-lg shadow-white/10"
+                      ? "bg-transparent text-white scale-125 shadow-lg shadow-white/20"
                       : "text-white/70 hover:bg-white/10 hover:scale-105"
                   }
                 `}
@@ -138,6 +155,22 @@ const currentProjects = projects.slice(
               </button>
             );
           })}
+
+          <button
+            onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
+            disabled={currentPage === totalPages}
+            className={`
+              w-10 h-10 rounded-full flex items-center justify-center
+              border border-white/20 transition-all duration-300
+              ${
+                currentPage === totalPages
+                  ? "opacity-40 cursor-not-allowed"
+                  : "hover:scale-110 hover:bg-white/10"
+              }
+            `}
+          >
+            <FaChevronRight />
+          </button>
         </div>
       </div>
     </section>
