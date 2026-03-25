@@ -34,34 +34,57 @@ const currentProjects = projects.slice(
             >
               <PinContainer
                 title={item.title}
-                href={item.link || "#"}
+                {...(item.link ? { href: item.link } : {})}
                 className="text-center items-center"
               >
-                <a
-                  href={item.link || "#"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[25vh] lg:h-[35vh] mb-4 group rounded-3xl"
-                >
-                  <div className="absolute inset-0 bg-[#13162D]" />
+                {item.link ? (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[25vh] lg:h-[35vh] mb-4 group rounded-3xl"
+                  >
+                    <div className="absolute inset-0 bg-[#13162D]" />
 
-                  <img
-                    src={item.img}
-                    alt={item.title}
-                    className="absolute inset-0 w-full h-full object-cover z-10 scale-100 transition-transform duration-500 ease-out group-hover:brightness-105"
-                  />
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      className="absolute inset-0 w-full h-full object-cover z-10 scale-100 transition-transform duration-500 ease-out group-hover:brightness-105"
+                    />
 
-                  <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-30 transition-opacity duration-500 z-20" />
-                </a>
+                    <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-30 transition-opacity duration-500 z-20" />
+                  </a>
+                ) : (
+                  <div
+                    className="block relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[25vh] lg:h-[35vh] mb-4 group rounded-3xl"
+                    aria-hidden="true"
+                  >
+                    <div className="absolute inset-0 bg-[#13162D]" />
 
-                <a
-                  href={item.link || "#"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 hover:text-purple transition-colors"
-                >
-                  {item.title}
-                </a>
+                    <img
+                      src={item.img}
+                      alt={item.title}
+                      className="absolute inset-0 w-full h-full object-cover z-10 scale-100 transition-transform duration-500 ease-out"
+                    />
+
+                    <div className="absolute inset-0 bg-black/10 opacity-0 transition-opacity duration-500 z-20" />
+                  </div>
+                )}
+
+                {item.link ? (
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 hover:text-purple transition-colors"
+                  >
+                    {item.title}
+                  </a>
+                ) : (
+                  <div className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 text-white">
+                    {item.title}
+                  </div>
+                )}
 
                 <p
                   className="lg:text-lg font-light text-sm text-[#BEC1DD] line-clamp-2 mt-2"

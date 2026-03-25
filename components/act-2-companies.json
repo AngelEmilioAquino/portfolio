@@ -1,0 +1,108 @@
+[
+  {
+    "name": "TechNova",
+    "category_code": "web",
+    "founded_year": 2001,
+    "number_of_employees": 650,
+    "homepage_url": "http://technova.com",
+    "twitter_username": "technova",
+    "email_address": "info@technova.com",
+    "offices": [
+      { "city": "San Francisco" },
+      { "city": "San Francisco" }
+    ]
+  },
+  {
+    "name": "MobileSoft",
+    "category_code": "mobile",
+    "founded_year": 1997,
+    "number_of_employees": 320,
+    "homepage_url": "http://mobilesoft.com",
+    "twitter_username": "mobilesoft",
+    "email_address": "contact@mobilesoft.com",
+    "offices": [
+      { "city": "New York" },
+      { "city": "Chicago" }
+    ]
+  },
+  {
+    "name": "GameWorld Studios",
+    "category_code": "games_video",
+    "founded_year": 2005,
+    "number_of_employees": 800,
+    "acquired_year": 2007,
+    "acquisition_price": 25000000,
+    "homepage_url": "http://gameworld.com",
+    "twitter_username": "gameworld",
+    "email_address": "support@gameworld.com",
+    "offices": [
+      { "city": "Culver City" },
+      { "city": "Los Angeles" }
+    ]
+  },
+  {
+    "name": "RetroGames Inc",
+    "category_code": "games_video",
+    "founded_year": 1996,
+    "number_of_employees": 1200,
+    "acquired_year": 2007,
+    "acquisition_price": 50000000,
+    "homepage_url": "http://retrogames.com",
+    "twitter_username": "retrogames",
+    "email_address": "info@retrogames.com",
+    "offices": [
+      { "city": "Culver City" },
+      { "city": "San Diego" }
+    ]
+  },
+  {
+    "name": "MusicLab",
+    "category_code": "music",
+    "founded_year": 2003,
+    "number_of_employees": 550,
+    "homepage_url": "http://musiclab.com",
+    "twitter_username": "musiclab",
+    "email_address": "hello@musiclab.com",
+    "offices": [
+      { "city": "San Francisco" },
+      { "city": "Boston" }
+    ]
+  },
+  {
+    "name": "WebSolutions",
+    "category_code": "web",
+    "founded_year": 2005,
+    "number_of_employees": 150,
+    "homepage_url": "http://websolutions.com",
+    "twitter_username": "websolutions",
+    "email_address": "info@websolutions.com",
+    "offices": [
+      { "city": "Miami" }
+    ]
+  },
+  {
+    "name": "NextGen Apps",
+    "category_code": "mobile",
+    "founded_year": 2001,
+    "number_of_employees": 720,
+    "homepage_url": "http://nextgenapps.com",
+    "twitter_username": "nextgenapps",
+    "email_address": "contact@nextgenapps.com",
+    "offices": [
+      { "city": "Austin" },
+      { "city": "San Francisco" }
+    ]
+  },
+  {
+    "name": "IndiePlay",
+    "category_code": "games_video",
+    "founded_year": 2002,
+    "number_of_employees": 540,
+    "homepage_url": "http://indieplay.com",
+    "twitter_username": "indieplay",
+    "email_address": "team@indieplay.com",
+    "offices": [
+      { "city": "Seattle" }
+    ]
+  }
+]
